@@ -42,7 +42,7 @@ export default {
                 if (a.match > b.match) return 1;
                 return 0;
             },
-            placeHolder: 'Folder path...',
+            placeHolder: 'Type a directory path (ie: /usr/src/)...',
             selector: '#autoComplete',
             threshold: 0,
             debounce: 50,
