@@ -6,8 +6,6 @@ module.exports = {
     'extends': [
         'eslint:recommended',
         'plugin:vue/essential',
-        //'plugin:vue/strongly-recommended'
-        // "plugin:prettier/recommended"
     ],
     'globals': {
         'Atomics': 'readonly',
@@ -19,7 +17,6 @@ module.exports = {
     },
     'plugins': [
         'vue',
-        // 'prettier'
     ],
     'rules': {
         'indent': [

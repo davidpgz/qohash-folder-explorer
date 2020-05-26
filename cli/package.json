@@ -1,5 +1,5 @@
 {
-  "name": "folder-browser-cli",
+  "name": "folder-explorer-cli",
   "version": "1.0.0",
   "description": "",
   "main": "bin/index.js",
