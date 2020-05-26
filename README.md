@@ -20,6 +20,8 @@ node . -p=/some/directory/path/
 
 ### Web
 
+npm install -g @vue/cli
+
 npm install
 
 npm run serve
