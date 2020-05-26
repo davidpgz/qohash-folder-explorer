@@ -22,7 +22,7 @@ npm install
 
 npm run serve
 
-Note: The autocomplete only works if '/' are used on linux file system and '\' on Windows file system.
+Note: The autocomplete only works if '/' are used on linux file system and '\\' on Windows file system.
 
 ## TODO
 
