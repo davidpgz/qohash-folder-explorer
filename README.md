@@ -23,4 +23,4 @@ Note: The autocomplete only works if '/' are used on linux file system and '\' o
 
 ## TODO
 
-Support the computing of directory size for any depth level
+Add support for directory size computing at any depth level.
