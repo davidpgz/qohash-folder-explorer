@@ -1,0 +1,24 @@
+{
+  "name": "folder-browser-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "hello": "./bin/index.js"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "boxen": "^4.2.0",
+    "chalk": "^2.4.2",
+    "cli-table": "^0.3.1",
+    "yargs": "^13.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.1.0"
+  }
+}
