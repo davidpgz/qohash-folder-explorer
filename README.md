@@ -4,6 +4,8 @@
 
 Each package must be run on the same machine.
 
+Node.js 12+ must be installed.
+
 ### Api
 
 npm install
