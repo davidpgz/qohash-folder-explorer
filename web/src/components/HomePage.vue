@@ -31,7 +31,7 @@
 
 <script>
 import AutoComplete from './AutoComplete';
-import folderBrowsing from '../apis/folderBrowsing';
+import folderExplorer from '../apis/folderExplorer';
 
 export default {
     name: 'HomePage',
@@ -58,12 +58,12 @@ export default {
     }),
 
     mounted() {
-        this.requestFolderContent();
+        this.requestDirectoryContent();
     },
 
     watch: {
         folder() {
-            this.requestFolderContent();
+            this.requestDirectoryContent();
         }
     },
 
@@ -108,16 +108,11 @@ export default {
     },
 
     methods: {
-        onSearchChange(search) {
-            folderBrowsing
-                .requestFolderContent({ search, maximumEntryCount: 10 })
-                .then((result) => (this.folderNames = result));
-        },
-        requestFolderContent() {
+        requestDirectoryContent() {
             this.loading = true;
 
-            folderBrowsing
-                .getFolderContent({ path: this.selectedFolder })
+            folderExplorer
+                .getDirectoryContent({ path: this.selectedFolder })
                 .then((folderContent) => this.folderContent = folderContent)
                 .finally(() => this.loading = false);
         },
@@ -159,14 +154,4 @@ export default {
 </script>
 
 <style scoped>
-.flex-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-.flex-column > * {
-  align-self: center;
-  margin-block-end: 1rem;
-}
 </style>

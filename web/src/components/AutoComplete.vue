@@ -6,7 +6,7 @@
 
 <script>
 import autoComplete from '@tarekraafat/autocomplete.js';
-import folderBrowsing from '../apis/folderBrowsing';
+import folderExplorer from '../apis/folderExplorer';
 import '@tarekraafat/autocomplete.js/dist/css/autoComplete.css';
 
 export default {
@@ -32,7 +32,7 @@ export default {
             data: {
                 src: async () => {
                     const query = document.querySelector('#autoComplete').value;
-                    return await folderBrowsing.fetchFolderContent({search: query});
+                    return await folderExplorer.getDirectoryChildDirectories({search: query});
                 },
                 cache: false
             },
