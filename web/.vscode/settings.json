@@ -1,5 +1,3 @@
 {
   "editor.formatOnSave": true
-  // "prettier.eslintIntegration": true
-  // "vetur.format.defaultFormatter.js": "prettier-eslint"
 }
